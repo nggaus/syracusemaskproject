@@ -1,0 +1,78 @@
+@import url(http://fonts.googleapis.com/css?family=Syncopate:400,700);
+html {
+  background: #292929;
+  color: #D9D9D9;
+}
+
+body {
+  overflow: hidden;
+}
+
+
+
+div.clock {
+  font-family: "Syncopate", Arial, sans-serif;
+
+  text-align: center;
+  /*margin-top: 192px;*/
+
+  cursor: default;
+  position: relative;
+
+  margin-top: 200px;
+}
+
+div.clock span {
+  font-size: 14em;
+}
+
+div.clock span.h {
+  font-weight: bold;
+}
+
+div.clock span.s {
+  font-size: 5em;
+  position: absolute;
+  top: 1.8em;
+  margin-left: 24px;
+}
+
+div.clock span.ma {
+  font-size: 5em;
+  position: absolute;
+  top: 0.6em;
+  margin-left: 24px;
+}
+
+
+
+div.alarm {
+  width: 800px;
+  height: 400px;
+
+  margin: 0px auto;
+  margin-top: -475px;
+  padding: 32px;
+
+  background: rgba(200, 200, 200, 0.1);
+  font-family: "Syncopate", Arial, sans-serif;
+
+  position: relative;
+}
+
+div.alarm h1 {
+  font-size: 5em;
+  text-align: center;
+}
+
+div.alarm p {
+  text-align: center;
+  font-size: 2em;
+
+  padding-top: 24px;
+}
+
+div.alarm div.miniclock {
+  text-align: center;
+  font-size: 3em;
+}
