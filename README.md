@@ -1,2 +1,0 @@
-# nggaus
-NancySews website repository

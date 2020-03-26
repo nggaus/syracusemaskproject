@@ -1,0 +1,93 @@
+/* CSS Document */
+
+/* Giving a background-color to the nav container. */
+nav {
+	margin:0;
+	padding: 0;
+	background-color: #00ae58;  /* girl scout green */
+	font-size: 1.6rem;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Style top level ul container */
+nav ul {
+	padding:0;
+	margin:0;  /* limit height of nav bar to contents of nav links */
+	list-style: none;  /* needed? */
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;  /* allow buttons to wrap if necessary */
+	}
+	
+/* Style top level list item containers */
+nav ul li {
+	margin: 0;  /* no space between list items, no added height */
+	position: relative;  /* allows children to be positioned */
+	
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;  /* allow text to wrap if necessary */
+}
+
+/* Change background on nav ul li.standout */
+.standout {
+  background-color: #00ae58;
+  margin: 0;
+}
+
+a.standout:hover {
+  background-color: #40c282;
+}
+
+
+/* Style navigation links further (i.e. clickable text */
+nav a {
+	display: block;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 600;
+  color: #c1ead4;
+	padding: 0 10px; /* defines the buffer between perceived buttons */
+	line-height: 2;  /* defines the height of the nav bar */
+	transition: all 150ms ease-in-out;  /* controls the effect of future change (ie hover) */
+}
+
+/* Background color change on hover over all clickable nav links */
+nav a:hover {
+	background-color: #40c282;
+}
+
+/* Hide dropdowns by default, give it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute;  /* attach to parent which is the upper list item */
+	/* has to be the same number as the "line-height" of "nav a" -- THIS IS HARD CODED */
+	top: 32px;  /* offset so it hangs off the bottom of the parent */
+	background-color: #00ae58;
+}
+
+/* Style first tier dropdown list items */
+nav ul ul li {
+	width: 260px;
+	float: none;
+	display: list-item;  /* generates a block box for the content and a separate list-item inline box */
+}
+
+/* On hover, dropdown ul will have same properties as parent ul */
+nav ul li:hover > ul {
+	display:inherit;
+}
+
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content: '';  }
+li > a:only-child:after { content: ''; }
+

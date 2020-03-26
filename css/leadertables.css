@@ -1,0 +1,60 @@
+table {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  table-layout: fixed;
+  overflow-x: auto;
+}
+
+th, td {
+  padding: 5px;
+  vertical-align: top;
+  text-align: left;
+  font-size: 1.4rem;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 1.5;
+	white-space: nowrap;
+}
+
+th {
+  border-bottom: 1px solid black;
+  font-weight: 800;
+}
+
+.troops td:nth-child(1), .troops th:nth-child(1) {
+  width: 75px;  /* was 10% */
+}
+
+.troops td:nth-child(2), .troops th:nth-child(2) {
+  width: 125px;  /* was 15% */
+}
+
+.troops td:nth-child(3), .troops th:nth-child(3) {
+  width: 75px;  /* was 10% */
+}
+
+.troops td:nth-child(4), .troops th:nth-child(4) {
+  width: 200px;  /* was 25% */
+}
+
+.troops td:nth-child(5), .troops th:nth-child(5) {
+  width: 335px;  /* was 40% */
+}
+
+.team td:nth-child(1), .team th:nth-child(1) {
+  width: 225px;  /* was 35% */
+}
+
+.team td:nth-child(2), .team th:nth-child(2) {
+  width: 200px;  /* was 25% */
+}
+
+.team td:nth-child(3), .team th:nth-child(3) {
+  width: 335px;  /* was 40% */
+}
+
+.table-standout {
+  background-color: #f5f5f5;
+}
