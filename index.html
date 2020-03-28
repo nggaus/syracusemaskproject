@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="description" content="Webpage for Nancy Sews, Baldwinsville, New York">
   <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Optimize for mobile devices -->
-  <title>Nancy Sews</title>
+  <title>Nancy Sews MENUS</title>
+  <link rel="shortcut icon" href="img/redcross.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">   <!-- Correct universal browser anolomalies -->
   <link rel="stylesheet" type="text/css" href="css/myGlobal.css">
@@ -30,41 +31,60 @@
     
     <!-- Masthead with logo and search tool -->
     <header class="header-box">
-      
       <img class="header-box-logo" src="img/businesslogo.png" alt="Nancy Sews"/>
-      <div style="position:relative; right: -20px; top: 20px; color:black">... but now retired</div>
-
-      
+<!--      <div style="position:relative; right: -20px; top: 20px; color:black">... but now retired</div> -->
     </header>
     
-    <hr style="color:#b7d0e2;">
+    <div>
+    <h1>Syracuse Needs Locally Sewn Masks</h1>
+    
+    <!-- Main navigation bar with dropdown feature -->
+    <nav>
+      <ul>
+        <li><a href="#requests">Mask Requests</a></li>
+        <li><a href="#groups">Local Groups</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#supplies">Supplies</a></li>
+        <li><a href="#dropoff">Drop Off Sites</a></li>
+      </ul>
+    </nav>
+    
+    </div>
+
     
     <div class="main-box">
 
       <main class="blog-box">
     
-          <h1>Syracuse Needs Locally Sewn Masks</h1>
-          
 <!-- TIMESTAMP -->
-          <div class="updates" style="background-color:#b3ffff">
+          <div class="requestapp" style="background-color:#e699ff; padding:10px; margin:10px 5px;">
+            <p>
+              <span style="font-weight: 500; font-size: 2.0rem; line-height: 1.5;">
+                <strong>I am working with the Syracuse tech community to have them create app where area healthcare centers can submit a request for masks, and area
+                sewists can see where the need is.  It is being rolled out this weekend.  I will let everyone know as this resource comes online. - Nancy<br></strong>
+<!--
+                Go to <a href="https://savior-sewists.now.sh/sewists.html" style="font-size: 2.0rem;">The Syracuse Mask Project</a> to post a request.
+                Area sewists/sewers/seamstresses should to
+                go the same place to see where the need is in their area and to find delivery instructions.  Thank you Peter, James, and Ryan for making this happen!
+-->
+                </strong>
+              </span>
+            </p>
+           </div>
+
+          <div class="updates" style="background-color:#b3ffff; padding:10px; margin:10px 5px">
+            
           <p><strong>Last Update</strong> -- 11:30 AM, 3/28/20 &nbsp; Some of you have been having trouble accessing the orginal Upstate instructions which include the pattern for
           the shaped mask.  I lifted those pattern pieces and added them to the <a href="support/UpdatedAssemblyWithPatterns.pdf">updated instructions</a> so that they are now available
           in both places.<br><br>
           
-          <strong>Update</strong> -- 11:40 PM, 3/27/20 &nbsp;  I have fabricated a bunch of nose pieces for the shaped "Upstate" masks and they are available for sewists in the Baldwinsville and Liverpool
-          area.  I have them packaged in lots of 16.  If you are local, you can pick up a package from a box on the front porch at 3220 Far Reach Drive (top of Radisson).  If you
-          are not local, there are instructions at the bottom of this page for how to make them yourself.  If someone else in the Syracuse area is willing to make these pieces as instructed below&#10038;,
-          you can leave them at Calico Gals on New Court Avenue in their donation bin.  Package them in lots of 16 or 20.</p>
-          
-          <p><strong>PLUS</strong> -- I made a lot of updates to this page.  You might want to skim through it if you've been here before.<br><br>
-          
-          <strong>ALSO</strong> -- I am working with the Syracuse tech community to have them create a website where area healthcare centers can submit a request for masks, and area sewists can see where the need is.
-          It is being rolled out this weekend.  I will let everyone know as this resource comes online.<br><br>
+          <strong>Update</strong> -- 11:40 PM, 3/27/20 &nbsp;  I have fabricated a bunch of nose pieces for the shaped "Upstate" masks and they are available for sewists in the
+          Baldwinsville and Liverpool area.  I have them packaged in lots of 16.  If you are local, you can pick up a package from a box on the front porch at 3220 Far Reach Drive
+          (top of Radisson).  If you are not local, there are instructions at the bottom of this page for how to make them yourself.  If someone else in the Syracuse area is willing
+          to make these pieces as instructed below&#10038;, you can leave them at Calico Gals on New Court Avenue in their donation bin.  Package them in lots of 16 or 20.<br><br>
           
           <strong>PLEASE</strong> -- If you are sick or have potentially been exposed to someone who is sick, please wait until you are recovered and out of danger before sewing masks!
           </p>
-          
-          
           
           </div>
           
@@ -97,7 +117,7 @@
 
 <!-- HOSPITALS -->
           <article class="blog-entry">
-          <h2>Hospitals that I know of that are accepting masks:</h2>
+          <h2 id="requests">Hospitals that I know of that are accepting masks:</h2>
           
           <div class="table-standout">
 
@@ -142,7 +162,7 @@
           
 <!-- GROUPS -->
           <article class="blog-entry">
-          <h2>Local groups that are already launching:</h2>
+          <h2 id="groups">Local groups that are already launching:</h2>
           <p>These are groups of people that are already getting started.  If one of these is close to you, reach out and connect with them.  If you know of other groups not listed here,
           reach out and let me know.  I'd love to include them here.</p>
           <ul class="plain-list">
@@ -175,7 +195,7 @@
 
 <!-- FAQ -->
           <article class="blog-entry">
-          <h2>Questions that you probably have that I think I have answers for:</h2>
+          <h2 id="faq">Questions that you probably have that I think I have answers for:</h2>
           <ul class="plain-list">
             <li><strong>How do I know I have the right materials in my stash?</strong><br>
             Current instructions are calling for tightly woven, <em>prewashed</em> cotton (quilting cotton will do), <em>prewashed</em> flannel if you have it (for filling), either
@@ -227,7 +247,7 @@
           
 <!-- SUPPLIERS -->
           <article class="blog-entry">
-          <h2>Fabric and notions suppliers:</h2>
+          <h2 id="supplies">Fabric and notions suppliers:</h2>
           <ul class="plain-list">
             <li><strong>JoAnn Fabrics</strong>, Great Northern. <a href="https://www.joann.com">www.joann.com</a>, 1-652-5367  </li>
             <li><strong>JoAnn Fabrics</strong>, Fayetteville. <a href="https://www.joann.com">www.joann.com</a>, 1-637-4213  </li>
@@ -247,7 +267,7 @@
 
 <!-- CoLLECTION -->
           <article class="blog-entry">
-          <h2>Collection points:</h2>
+          <h2 id="dropoff">Collection points:</h2>
           <p>Please package masks in sealed plastic bags or plastic containers with lids.</p>
           <ul class="plain-list">
               <ul class="plain-list">
