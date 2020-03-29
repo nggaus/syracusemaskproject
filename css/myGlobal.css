@@ -66,7 +66,7 @@ h1 {
 
 /* .page-title-style { */
   color: white;
-  -webkit-text-stroke: 1px darkgreen;
+/*   -webkit-text-stroke: 1px darkgreen; */
   background-color: #00ae58;
   text-align: center;
   line-height: 2.0;
