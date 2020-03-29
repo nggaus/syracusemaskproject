@@ -87,7 +87,6 @@ h2 {
 	line-height: 1.5;
   background: none;
 	color: black;
-  text-transform: lowercase;
 }
 
 h3 {
@@ -228,6 +227,7 @@ figcaption {
 .header-box-logo {
   margin-left: 10px;
   height: 100px;
+  width:380;
 }
 
 .header-box-girlscouts {
