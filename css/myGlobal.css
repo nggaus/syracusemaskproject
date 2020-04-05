@@ -131,6 +131,26 @@ figcaption {
   float: left;
 }
 
+.appeal {
+  padding: 10px;
+  margin: 10px 5px;
+  font-weight: 800;
+  font-size: 2.0rem;
+  line-height: 1.5
+}
+
+.shout-text {
+  font-weight: 500;
+  font-size: 2.0rem;
+  line-height: 1.5;
+}
+
+.shout-link {
+  font-weight: 500;
+  font-size: 2.0rem;
+  line-height: 1.5;
+  color: blue;
+}
 
 
 /* Set up flexbox formatting */
@@ -167,11 +187,7 @@ figcaption {
 
   background-size: 104px 66px;
   background-repeat: repeat;
-  /* background-position: center center;
-	background-attachment: fixed;
-	background-size: cover; */
-  /* background-image: none; */
-  
+ 
   font-size: 2.0rem;
 	font-style: normal;
 	font-variant: normal;
@@ -225,9 +241,11 @@ figcaption {
 }
 
 .header-box-logo {
-  margin-left: 10px;
+  display:block;
   height: 100px;
   width:380;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-box-girlscouts {
@@ -256,7 +274,21 @@ figcaption {
 }
 
 
+.disclosure-box {
+  background-color:#f5f5f5;
+  padding:10px;
+  margin:10px 5px;
+}
 
+.update-box {
+  background-color:#ccffff;
+  padding:10px;
+  margin:10px 5px
+}
+
+.center-me {
+  display:block; margin-left: auto; margin-right: auto;
+}
 
 
 /* Main Photo or Title Graphic */
