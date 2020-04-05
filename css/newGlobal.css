@@ -205,41 +205,6 @@ figcaption {
   }
 }
 
-.login-pin-tab {  /* use sprite for leader tab shaped button */
-  display: inline-block;
-  width: 98px;
-  height: 60px;
-  background: no-repeat url("../img/pinTab.png") 0 0;
-  float: right;
-}
-
-.logout-pin-tab {  /* use sprite for leader tab shaped button */
-  display: inline-block;
-  width: 98px;
-  height: 60px;
-  background: no-repeat url("../img/pinTabLogout.png") 0 0;
-  float: right;
-}
-
-.login-pin-tab:hover {  /* shift the sprite */
-  background-position: 0 -60px;
-}
-
-.logout-pin-tab:hover {  /* shift the sprite */
-  background-position: 0 -60px;
-}
-
-.header-box-search {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-
-  margin-bottom: 24px;
-}
-
-@media (min-width: 768px) {
-  .header-box-search { margin-bottom: 0px; }
-}
 
 .header-box-logo {
   display:block;
@@ -247,31 +212,6 @@ figcaption {
   width:380;
   margin-left: auto;
   margin-right: auto;
-}
-
-.header-box-girlscouts {
-  margin-left: 10px;
-  font-weight: 800;
-}
-
-.header-box-baldwinsville { margin-left: 40px; }
-
-
-
-
-/* Main Photo or Title Graphic */
-.photo-box {
-  flex: 1;
-  margin: 0;
-  background-color: black;
-  color: white;
-  height: auto;
-}
-
-.photo-box > img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 
@@ -290,20 +230,6 @@ figcaption {
 .center-me {
   display:block; margin-left: auto; margin-right: auto;
 }
-
-
-/* Main Photo or Title Graphic */
-.title-box {
-  flex: 1;
-  margin: 0;
-  padding: 0 10px;
-  height: auto;   /* If not main page, height: 100px; */
-  background-color: white;
-  
-  display: flex;
-  flex-direction: column;
-}
-
 
 
 /* Page Content */
@@ -334,82 +260,6 @@ figcaption {
 @media (min-width: 768px) {
   .blog-box { flex: 3; }
 }
-
-.blog-image {       /* Float blog thumbnail with text around */
-  float: right;
-  margin: 18px 0 10px 10px;
-  border: none;
-  border-radius: 3px;
-}
-
-.blog-image-left {       /* Float blog thumbnail with text around */
-  float: left;
-  margin: 18px 10px 10px 0;
-  border: none;
-  border-radius: 3px;
-}
-
-.recruit-box {    /* Flex container */
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-@media (min-width: 768px) {
-  .recruit-box {
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-  }
-}
-
-.adult-recruit, .girl-recruit {  /* Flex items and new containers */
-  margin: 10px;
-  padding: 0;
-  width: 80%;
-  max-width: 400px;
-}
-
-.recruit-border {
-  border-right: 3px dotted var(--deep-background-color);
-  border-bottom: 3px dotted var(--deep-background-color);
-  border-left: 3px dotted var(--deep-background-color);
-}
-
-.adult-recruit-header, .girl-recruit-header {  /* Flex items */
-  color: white;
-  background-color: var(--girlscout-purple);
-  text-align: center;
-  font-size: 2.4rem;
-  line-height: 2.0;
-  font-weight: 800;
-}
-
-.girl-recruit-header {
-  /* background-color: var(--girlscout-blue); */
-  background-color: #4983c2;
-}
-
-.adult-recruit-subheader, .girl-recruit-subheader {  /* Flex items */
-  text-align: center;
-  font-size: 1.6rem;
-  padding-top: 10px;
-}
-
-.arrow {   /* Flex items */
-  display: block;
-  text-align: center;
-}
-
-.adult-recruit-text, .girl-recruit-text {  /* Flex items */
-  margin: 0;
-  padding: 0 10px 10px 10px;
-}
-
-
 
 
 /* Sidebar */
@@ -451,7 +301,8 @@ figcaption {
   }
 }
 
-.busy-list {
+/* This is for lists that don't need any fancy bullets */
+.plain-list {
   height: auto;
   padding-left: 15px;  /* padding entire list away from border */
   list-style-type: none;  /* eliminate the usual discs */
@@ -459,61 +310,11 @@ figcaption {
   flex: 1;
 }
 
-.busy-list > li {
+.plain-list > li {
   position: relative;  /* nudge from it's position without removing from DOM */
   padding-left: 10px;
-  text-indent: -25px;
+  text-indent: 0px;
 }
-
-/* https://stackoverflow.com/questions/34141950/how-to-use-tick-checkmark-symbol-instead-of-bullets-in-unordered-list */
-.busy-list li:before {
-  content: "\2713\0020";  /* Stylized checkmark before each list item */
-  padding-right: 10px;
-}
-
-.sidebar-clip {
-  max-width: 170px;
-  max-height: 170px;
-  flex: 1 1 auto;
-}
-  
-/* Sidebar Photo */
-/* Mobile format */
-.sidebar-photo-box {
-  flex: 1;
-  margin: 0 10px 10px 10px;
-  padding: 0;
-  background-color: white;
-  color: white;
-  height: auto;
-  width: 200px;
-}
-
-/* Large screen format */
-@media (min-width: 768px) {
-  .sidebar-photo-box {
-    margin-top: 10px;
-    width: auto;
-  }
-}
-
-@media (max-width:767px) {
-.sidebar-photo-box > img {
-  display: block;
-  max-width: 200px;
-  border-radius: 3px;
-}
-}
-
-@media (min-width: 768px) {
-  .sidebar-photo-box > img {
-    display: block;
-    width: 100%;
-    border-radius: 3px;
-  }
-}
-
-
 
 /* Footer */
 .footer-box {
@@ -531,62 +332,3 @@ figcaption {
 .footer-box a { color: var(--girlscout-light-blue); }
 
 .break-here { display: inline-block; } /* responsive line break when screen shrinks */
-
-
-/* Search Box Styling - search box is disabled for now
-.input-box {
-  background-color: white;
-  border: 1px solid #ccc;
-  padding: 8px;
-  border-radius: 2px;
-  outline: none;
-  height: 24px;
-  font-size: 14px;
-}
-
-.input-box:focus { border-color: royalblue; }
-.input-box::placeholder { color: #aaa; }
-
-.button {
-  font-size: 14px;
-  background-color: #bbb;
-  border: 1px solid #ccc;
-  border-radius: 2px;
-  
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin-left: 5px;
-  
-  outline: none;
-  cursor: pointer;
-  transition: all 150ms ease-in-out;
-}
-.button:hover { background-color: #aaa; }
-.button:focus { background-color: #bbb; }  */
-
-#volunteer, #join {
-  cursor: pointer;
-}
-
-/* Special horizontal rule */
-hr.style-hr {
-  border: none;
-  height: 3px;
-  color: #333;
-  text-align: center;
-}
-
-hr.style-hr:after {
-  content: " ";
-  display: inline-block;
-  position: relative;
-  top: -3.1em;
-  font-size: 1.5em;
-  padding: 19px 10px;
-  background: #fff url(../img/surgMask_114x90.png) no-repeat scroll center;
-  background-size: 90px 60px;
-  height: 50px;
-  width: 114px;
-}
