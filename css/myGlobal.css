@@ -160,10 +160,10 @@ figcaption {
   flex-shrink: 0;
 
   margin: 0;
-  padding: 0 10px 24px 10px;
+  padding: 0 10px 10px 10px;
 
   color: black;
-  background-color: white;
+  background-color: #f5f5f5;
 
   background-size: 104px 66px;
   background-repeat: repeat;
@@ -182,7 +182,7 @@ figcaption {
 
 @media (min-width: 768px) {
   .header-box {
-  background-color: white;
+  background-color: #f5f5f5;
   background-size: 104px 66px;
   background-repeat: repeat;
   }
