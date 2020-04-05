@@ -9,7 +9,6 @@
 
 
 
-
 /* Blog style on private home page*/
 .blog-entry {
   overflow: hidden;
@@ -128,6 +127,20 @@
   text-indent: 0px;
 }
 
+/* This is for lists that appear in the sidebar but don't need any fancy bullets */
+.group-list {
+  height: auto;
+  padding-left: 15px;  /* padding entire list away from border */
+  list-style-type: disc;  /* eliminate the usual discs */
+  list-style-position: outside; /* checks are outside of text block */
+  flex: 1;
+}
+
+.group-list > li {
+  position: relative;  /* nudge from it's position without removing from DOM */
+  padding-left: 10px;
+  text-indent: 0px;
+}
 
 /*Dropdown menu styling (there are no dropdown menus on the public page) */
 /* .nav-bar a .drop-down {   any dropdown attached to a link in a nav-bar */
