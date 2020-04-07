@@ -51,12 +51,6 @@ body::after {
   
   background-color: var(--deep-background-color);
 
-  /* background-image: url(../img/experiment_156x100.png);
-  background-size: 78px 50px;
-  background-repeat: repeat;
-  background-position: center center;
-	background-attachment: fixed;
-	background-size: cover; */
 }
 
 h1 {
@@ -81,7 +75,7 @@ h1 {
 
 
 h2 {
-	font-size: 2.0rem;
+	font-size: 2.2rem;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 800;
@@ -91,7 +85,7 @@ h2 {
 }
 
 h3 {
-	font-size: 1.2rem;
+	font-size: 1.8rem;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
@@ -99,7 +93,7 @@ h3 {
 }
 
 p {
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
@@ -107,7 +101,7 @@ p {
 }
 
 ul {
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
@@ -118,7 +112,7 @@ ul {
 a {
 	color: var(--girlscout-green);
 	text-decoration: none;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 }
 
 a:hover {
@@ -133,6 +127,7 @@ figcaption {
 }
 
 .appeal {
+  color: #595959;
   padding: 10px;
   margin: 10px 5px;
   font-weight: 800;
@@ -142,17 +137,22 @@ figcaption {
 
 .shout-text {
   font-weight: 500;
-  font-size: 2.0rem;
+  font-size: 1.8rem;
   line-height: 1.5;
 }
 
 .shout-link {
   font-weight: 500;
-  font-size: 2.0rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   color: blue;
 }
 
+.disclose-text {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
 
 /* Set up flexbox formatting */
 .wrapper {
@@ -189,7 +189,7 @@ figcaption {
   background-size: 104px 66px;
   background-repeat: repeat;
  
-  font-size: 2.0rem;
+  font-size: 2.2rem;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: normal;
@@ -205,6 +205,41 @@ figcaption {
   }
 }
 
+.login-pin-tab {  /* use sprite for leader tab shaped button */
+  display: inline-block;
+  width: 98px;
+  height: 60px;
+  background: no-repeat url("../img/pinTab.png") 0 0;
+  float: right;
+}
+
+.logout-pin-tab {  /* use sprite for leader tab shaped button */
+  display: inline-block;
+  width: 98px;
+  height: 60px;
+  background: no-repeat url("../img/pinTabLogout.png") 0 0;
+  float: right;
+}
+
+.login-pin-tab:hover {  /* shift the sprite */
+  background-position: 0 -60px;
+}
+
+.logout-pin-tab:hover {  /* shift the sprite */
+  background-position: 0 -60px;
+}
+
+.header-box-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .header-box-search { margin-bottom: 0px; }
+}
 
 .header-box-logo {
   display:block;
@@ -214,8 +249,38 @@ figcaption {
   margin-right: auto;
 }
 
+.header-box-girlscouts {
+  margin-left: 10px;
+  font-weight: 800;
+}
+
+.header-box-baldwinsville { margin-left: 40px; }
+
+
+
+/* Main Photo or Title Graphic */
+.photo-box {
+  flex: 1;
+  margin: 0;
+  background-color: black;
+  color: white;
+  height: auto;
+}
+
+.photo-box > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 
 .disclosure-box {
+  background-color:#f5f5f5;
+  padding:10px;
+  margin:10px 5px;
+}
+
+.shaded-box {
   background-color:#f5f5f5;
   padding:10px;
   margin:10px 5px;
@@ -232,11 +297,25 @@ figcaption {
 }
 
 
+/* Main Photo or Title Graphic */
+.title-box {
+  flex: 1;
+  margin: 0;
+  padding: 0 10px;
+  height: auto;   /* If not main page, height: 100px; */
+  background-color: white;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 /* Page Content */
 .main-box {          /* Flex container */
   flex: 1;
   margin: 0;
-  background-color: blue;
+  background-color: white;
   color: black;
 
   display: flex;
@@ -260,6 +339,21 @@ figcaption {
 @media (min-width: 768px) {
   .blog-box { flex: 3; }
 }
+
+.blog-image {       /* Float blog thumbnail with text around */
+  float: right;
+  margin: 18px 0 10px 10px;
+  border: none;
+  border-radius: 3px;
+}
+
+.blog-image-left {       /* Float blog thumbnail with text around */
+  float: left;
+  margin: 18px 10px 10px 0;
+  border: none;
+  border-radius: 3px;
+}
+
 
 
 /* Sidebar */
@@ -301,8 +395,7 @@ figcaption {
   }
 }
 
-/* This is for lists that don't need any fancy bullets */
-.plain-list {
+.busy-list {
   height: auto;
   padding-left: 15px;  /* padding entire list away from border */
   list-style-type: none;  /* eliminate the usual discs */
@@ -310,11 +403,61 @@ figcaption {
   flex: 1;
 }
 
-.plain-list > li {
+.busy-list > li {
   position: relative;  /* nudge from it's position without removing from DOM */
   padding-left: 10px;
-  text-indent: 0px;
+  text-indent: -25px;
 }
+
+/* https://stackoverflow.com/questions/34141950/how-to-use-tick-checkmark-symbol-instead-of-bullets-in-unordered-list */
+.busy-list li:before {
+  content: "\2713\0020";  /* Stylized checkmark before each list item */
+  padding-right: 10px;
+}
+
+.sidebar-clip {
+  max-width: 170px;
+  max-height: 170px;
+  flex: 1 1 auto;
+}
+  
+/* Sidebar Photo */
+/* Mobile format */
+.sidebar-photo-box {
+  flex: 1;
+  margin: 0 10px 10px 10px;
+  padding: 0;
+  background-color: white;
+  color: white;
+  height: auto;
+  width: 200px;
+}
+
+/* Large screen format */
+@media (min-width: 768px) {
+  .sidebar-photo-box {
+    margin-top: 10px;
+    width: auto;
+  }
+}
+
+@media (max-width:767px) {
+.sidebar-photo-box > img {
+  display: block;
+  max-width: 200px;
+  border-radius: 3px;
+}
+}
+
+@media (min-width: 768px) {
+  .sidebar-photo-box > img {
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+  }
+}
+
+
 
 /* Footer */
 .footer-box {
@@ -332,3 +475,28 @@ figcaption {
 .footer-box a { color: var(--girlscout-light-blue); }
 
 .break-here { display: inline-block; } /* responsive line break when screen shrinks */
+
+#volunteer, #join {
+  cursor: pointer;
+}
+
+/* Special horizontal rule */
+hr.style-hr {
+  border: none;
+  height: 3px;
+  color: #333;
+  text-align: center;
+}
+
+hr.style-hr:after {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: -3.1em;
+  font-size: 1.5em;
+  padding: 19px 10px;
+  background: #fff url(../img/surgMask_114x90.png) no-repeat scroll center;
+  background-size: 90px 60px;
+  height: 50px;
+  width: 114px;
+}
