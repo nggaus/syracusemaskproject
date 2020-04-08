@@ -481,7 +481,7 @@ figcaption {
   cursor: pointer;
 }
 
-/* Special horizontal rule */
+/* Special horizontal rule
 hr.style-hr {
   border: none;
   height: 3px;
@@ -501,3 +501,4 @@ hr.style-hr:after {
   height: 50px;
   width: 114px;
 }
+*/
